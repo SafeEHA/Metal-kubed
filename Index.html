@@ -1,0 +1,176 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+  </head>
+  <body>
+    <nav>
+        <div class="logo">
+          <img src="assets/metal3logo.png" alt="banner" width="50px">
+          <h3> Metal<sup>3</sup></h3>
+        </div>
+        <!-- toggle menu button -->
+        <span class="menubtn" onclick="openNav()">&#9776;</span>
+      
+        <div class="navLinks">
+          <ul>
+          
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Try it</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Documentation</a></li>
+          </ul>
+        </div>
+        <!-- <input type="text" placeholder="search">
+        <button type="submit"><img src="assets/search.png"></button> -->
+      </nav>
+        <!-- responsive side navbar -->
+        <div class="sideNav" id="sidenav">
+          <!-- <input type="text" placeholder="search">
+          <button type="submit"><img src="assets/search.png"></button> -->
+          <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+        
+          <a href="#">Blog</a>
+          <a href="#">Try it</a>
+          <a href="#">Contact</a>
+          <a href="#">Documentation</a>
+        </div>
+        
+        <!-- Header content with banner image -->
+        <div class="wrapper">                     
+          <div class="row">
+          <div class="column1">
+            <h1>Metal-kubed</h1>
+            <p>Unlock the Full Potential of Kubernetes with Metal3</p>
+           <div>
+            <button>Get Started</button>
+            <a href="#" class="btn">Check out the user guide</button></a>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="section">
+        
+          <div class="sec-1">
+          <h1>Why Metal<sup>3</sup></h1>
+        </div>
+        <div class="grid-container">
+          <div class="column, sec-1">
+            <img src="assets/bare-metal_pro.png" alt="Image with transparent background" class="transparent-bg">
+            <p class="">Bare metal host management: Metal3.io provides a unified interface for managing your bare metal hosts, allowing you to easily provision, update, and monitor them from a single location.</p>
+            <img src="assets/kube.png" alt="Image with transparent background" class="transparent-bg">
+            <p>Integration with Kubernetes: Metal3.io integrates seamlessly with Kubernetes, allowing you to manage your bare metal hosts using Kubernetes APIs and tools.</p>
+          </div>
+          <div class="column">
+            <div class="btm-text">
+              <img src="assets/community.png" alt="Image with transparent background" class="transparent-bg">
+            <p>Community-driven development: Metal3.io is an open-source project that is developed and maintained by a community of contributors from around the world. This means that the project is constantly evolving and improving, and that you can benefit from the collective knowledge and expertise of the community.</p>
+          </div>
+          </div>
+          <div class="column, sec-1">
+            <img src="assets/baremetal.png" alt="Image with transparent background" class="transparent-bg">
+
+            <p>Bare metal provisioning: With Metal3.io, you can quickly and easily provision new bare metal hosts, either manually or through automated processes. This allows you to quickly scale your infrastructure as needed.</p>
+            <img src="assets/support.png" alt="Image with transparent background" class="transparent-bg">
+            
+            <p>Support for multiple hardware platforms: Metal3.io is designed to work with a wide range of hardware platforms, including x86 servers, Arm servers, and more.</p>
+          </div>
+         
+        </div>
+        </div>
+          <div class="blog-container">
+            <div class="blog-wrapper">
+              <h2 class="blog-title">What's new ?</h2> 
+            
+          </div>
+          </div>
+          <div class="accordion_container">
+            <h2 class="blog-title">FAQs</h2> 
+
+          <div class="accordion">
+                  <div>
+                    <input type="radio" name="accordion-section" id="accordion1" class="accordion_input">
+                    <label for="accordion1" class="accordion_label">What is the baremetal operator?</label>
+                    <div class="accordion_content">
+                      <p>The bare metal operator is documented at https://github.com/metal3-io/baremetal-operator/blob/master/docs/api.md and it’s the operator in charge of definitions of physical hosts, containing information about how to reach the Out of Band management controller, URL of image to provision, plus other properties related with hosts being used for provisioning instances.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <input type="radio" name="accordion-section" id="accordion2" class="accordion_input">
+                    <label for="accordion2" class="accordion_label">What is the IPMI?</label>
+                  <div class="accordion_content">
+                    <p>IPMI is the acronym for Intelligent Platform Management Interface which is used to monitor hardware health (fans, voltage, temperature, etc). Specification is available at https://www.intel.com/content/www/us/en/products/docs/servers/ipmi/ipmi-home.html and was created by a joint effort by several manufactures. It allows to also define boot order and power status of the hardware.</p>
+                  </div>
+                  </div>
+                  <div>
+                 <input type="radio" name="accordion-section" id="accordion3" class="accordion_input">
+                 <label for="accordion3" class="accordion_label">What is out-of-band management?</label>
+                  <div class="accordion_content">
+                    <p>Enterprise hardware usually have an integrated or optional controller that allows to reach the server even if it’s powered down, either via dedicated or shared nic. This controller allows some checks on the server hardware and also perform some settings like changing power status, changing Boot Order, etc. The Baremetal Operator uses it to power on, reboot and provision the physical servers to be used for running workloads on top. Commercial names include iDrac, iLO, iRMC, etc and most of them should support IPMI.</p>
+                  </div>
+                </div>
+                  <div>
+                    <input type="radio" name="accordion-section" id="accordion4" class="accordion_input">
+                    <label for="accordion4" class="accordion_label">What is an operator?</label>
+                    <div class="accordion_content">
+                      <p>An Operator is a method of packaging, deploying and managing a Kubernetes application. A Kubernetes application is an application that is both deployed on Kubernetes and managed using the Kubernetes APIs and kubectl tooling. You can think of Operators as the runtime that manages this type of application on Kubernetes. If you want to learn more about Operators you can check the Operator framework website https://operatorframework.io/what/</p>
+                    </div>
+                  </div>
+                
+          </div>   
+         
+        </div>
+        <div class="community_container">
+          <h1>Community Resources</h1>
+         
+          <img src="assets/community.jpg" width="200px" height="100px" class="community_img">
+          <div class="community_content">
+          <p>Connect with the Metal3.io community to learn more, contribute ideas, and help build the future of Metal3.io.<br> Learn more about how to make the most of the Metal3io features in your work.</p>
+          <button type="button" class="community-button">Join the Conversation</button>
+        </div>
+        </div>
+           <footer>
+
+            <img src="assets/cncf.png"class="logo" width="400px" height="70px">
+      <div class="footer_links">
+          <a href="https://metal3.io/privacy-statement.html" class="footer-link">Privacy</a>
+          <a href="https://www.cncf.io/" class="footer-link">Cloud Native Computing Foundation</a>
+          <a href="https://www.linuxfoundation.org/legal/trademark-usage" class="footer-link">Trademark</a>
+      </div>
+
+      </section>
+      <div class="socials">
+        <a href="https://twitter.com/metal3_io" class="social-icon" target="_blank">
+        
+      <ion-icon size="large" name="logo-twitter"></ion-icon>
+    </a>
+    <a href="https://app.slack.com/client/T09NY5SBT/CHD49TLE7"class="social-icon" target="_blank">  
+    <ion-icon size="large" name="logo-slack"></ion-icon>
+    </a>
+    <a href="https://github.com/metal3-io" class="social-icon" target="_blank">
+    <ion-icon size="large" name="logo-github"></ion-icon>
+    </a>
+    <a href="https://groups.google.com/g/metal3-dev?pli=1" class="social-icon" target="_blank">  
+    <ion-icon size="large" name="mail-sharp"></ion-icon>
+    </a>
+    <a href="https://www.youtube.com/channel/UC_xneeYbo-Dl4g-U78xW15g/videos" class="social-icon" target="_blank">
+     
+    <ion-icon size="large" name="logo-youtube"></ion-icon>
+    </a>
+  </div>
+      <section class="copyright">Copyright &copy; Metal<sup>3</sup> Contributors 2023</section>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+
+</body>
+</html>
