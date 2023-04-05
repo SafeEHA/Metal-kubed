@@ -11,26 +11,6 @@ hamburgerBtn.addEventListener('click', function(){
         mobileNav.classList.remove('show')
     }
 })
-//Acccordion
-const accordionHeaders = document.querySelectorAll('.accordionHeader');
-
-accordionHeaders.forEach(header => {
-  header.addEventListener('click', () => {
-    header.classList.toggle('active');
-    const arrowIcon = document.querySelectorAll('.accordionHeader img')
-
-    const accordionContent = header.nextElementSibling;
-    if (accordionContent.style.display === 'block') {
-      accordionContent.style.display = 'none';
-      arrowIcon.innerHTML = '<img src="Images/dark-mode-dash-icon.png width="24px" height="24px" alt="">';
-
-      console.log('work')
-    } else {
-      accordionContent.style.display = 'block';
-      console.log('working')
-    }
-  });
-});
 
 const modeIcon = document.querySelector('.modeIcon');
 const searchIcon = document.querySelector('.searchIcon')
