@@ -1,318 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="darkMode">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="darkMode">
     <header>
-        <nav>
-            <div class="container">
-                <div class="logo">
-                    <svg version="1.1" viewBox="0 0 557 540" xmlns="http://www.w3.org/2000/svg" style="height:5rem">
-                        <g fill="none" fill-rule="evenodd">
-                          <g transform="translate(-1)" fill-rule="nonzero">
-                          <path d="m181.91 539.68h-0.7c-0.76 0-1.44-0.11-2-0.17h-0.14l-1.62-0.2c-15.204-1.867-29.364-8.7129-40.27-19.47l-1.07-1.06-49.46-61.26-73.34-90.59-0.5-0.72c-2.8927-4.0899-5.2989-8.503-7.17-13.15-1.0257-2.532-1.8875-5.1274-2.58-7.77v-0.11c-0.22-0.85-0.43-1.69-0.62-2.56v-0.14c-0.8042-3.5966-1.2861-7.2578-1.44-10.94v-0.47-0.48c-0.067687-4.136 0.26722-8.2688 1-12.34l0.11-0.61 14.51-63.64 28.72-126c4.0017-17.442 15.802-32.074 32-39.68l178.2-85.93 3.34-0.67c5.6926-1.1418 11.484-1.7201 17.29-1.7201h2.83 0.57c8.4518-0.016309 16.808 1.7879 24.5 5.2901l0.47 0.22 175.82 84.2 0.48 0.25c7.1101 3.7526 13.491 8.7481 18.84 14.75 2.7886 3.1018 5.2639 6.4715 7.39 10.06l0.17 0.29c2.1776 3.7964 3.9314 7.8205 5.23 12l0.3 1 44.23 190.25 0.17 1.42c2.0399 16.443-2.1677 33.052-11.79 46.54l-0.48 0.68-121.46 150.24c-7.2792 9.604-17.475 16.59-29.06 19.91-0.93 0.27-1.87 0.52-2.81 0.75l-0.3 0.07c-5.0328 1.1701-10.183 1.76-15.35 1.76h-194.01z" fill="#fff"></path>
-                          <path d="m492 131.65c-0.75221-2.3458-1.7582-4.6025-3-6.73-1.2507-2.1148-2.7114-4.0982-4.36-5.92-3.3032-3.7145-7.2456-6.8067-11.64-9.13l-179.82-86c-4.3569-1.9816-9.0938-2.9883-13.88-2.95h-0.77c-4.9428-0.19294-9.8909 0.20318-14.74 1.18l-179.72 86.6c-8.9642 4.1124-15.498 12.17-17.67 21.79l-3.69 16.16 216.29 117.67 0.34-0.18 217.22-112.72-4.56-19.77z" fill="#D9C88D"></path>
-                          <path d="m279 264.32l-216.29-117.67-25.77 113.1-14.73 64.63c-0.44744 2.4671-0.64178 4.9734-0.58 7.48v0.29c0.072639 2.1493 0.33702 4.2878 0.79 6.39 0.12 0.56 0.26 1.1 0.4 1.65 0.41228 1.5719 0.92671 3.1151 1.54 4.62 1.1152 2.7748 2.5517 5.4095 4.28 7.85l23.69 29.27 51 63 49.67 61.55c6.7982 6.7311 15.643 11.009 25.14 12.16 0.67 0 1.31 0.18 2 0.21h99.17v-254.34l-0.31-0.19z" fill="#D9C88D"></path>
-                          <path d="m536.75 324.38l-40.19-173-217.23 112.76v254.71h98.82c3.2616 0.017 6.5139-0.34884 9.69-1.0906 0.62-0.15 1.23-0.31 1.84-0.49 6.2438-1.7629 11.72-5.5604 15.56-10.79l66.09-81.75 31.31-38.73 26.94-33.33c5.8432-8.2018 8.4013-18.295 7.17-28.29z" fill="#D9C88D"></path>
-                          <path d="m120.94 369l137 75.89c1.3702 0.76284 3.0421 0.74251 4.3933-0.05344s2.1796-2.2483 2.1767-3.8166v-161.02c0-5.718-3.1489-10.971-8.19-13.67l-1.64-0.87-134.68-71.99c-0.8041-0.43178-1.7757-0.41032-2.56 0.056543-0.78426 0.46687-1.2663 1.3108-1.27 2.2235l-0.94 163.17c0.02 3.63 2.77 8.44 5.71 10.08z" fill="#fff"></path>
-                          <path d="m282.61 103.85c-4.0372-0.033083-8.0333 0.81323-11.71 2.481l-134.2 60.47c-0.91184 0.40637-1.512 1.2973-1.5476 2.295-0.032512 0.99771 0.50554 1.9274 1.3876 2.395l135.72 72.51c0.15 0.09 0.31 0.16 0.47 0.24l0.59 0.29 0.26 0.11 0.8 0.34h0.09c4.9879 1.8704 10.539 1.5061 15.24-1l139.14-73.94c1.1079-0.5822 1.7814-1.7504 1.7328-3.0009-0.054039-1.2505-0.82096-2.3596-1.9728-2.8491l-135.06-58.05c-3.4545-1.4945-7.1761-2.2735-10.94-2.291z" fill="#fff"></path>
-                          <path d="m442.82 192.61c-1.08-0.49333-2.4133-0.29667-4 0.59l-24.52 13.54c-3.6117 1.9922-6.3845 5.2194-7.81 9.09l-37.49 87.55-37.31-46.2c-1.59-2.29-4.2-2.45-7.81-0.45l-24.51 13.54c-1.6358 0.9266-3.0116 2.2508-4 3.85-1.0039 1.4454-1.5667 3.151-1.62 4.91v166.83c0 1.59 0.55 2.59 1.63 3s2.42 0.19 4-0.69l27.34-15.1c1.6143-0.90735 2.9864-2.1902 4-3.74 1.0178-1.3976 1.5863-3.0717 1.63-4.8v-105l23.21 30.12c2.1667 2.1267 4.6967 2.3933 7.59 0.8l11.67-6.45c3.18-1.7467 5.71-4.8067 7.59-9.18l23.43-55.9 0.25 97.1 0.17 8.31c-0.10795 1.217 0.57186 2.3675 1.69 2.86 1.2747 0.44018 2.6836 0.23517 3.78-0.55l27.27-15.83c1.5869-0.9387 2.9245-2.2455 3.9-3.81 0.9881-1.4207 1.5184-3.1095 1.5212-4.84v-166.43c0.028815-1.6-0.51118-2.64-1.6012-3.12z" fill="#fff"></path>
-                          </g>
-                        </g>
-                      </svg>
-                                    </div>
-                <div class="menuList">
-                    <ul>
-                        <li>Blog</li>
-                        <li>Community Resource</li>
-                        <li>Documentation</li>
-                        <li>Try it</li>
-                    </ul>
-                </div>
-                <div class="searchMode">
-                    <div class="modeIcon">
-                        <img src="assets/dark-mode-icon.png" width="24px" height="24px" alt=""> 
-                    </div>
-                    <div class="searchIcon">
-                        <img src="assets/dark-mode-search-icon.png" width="24px" height="24px" alt="">
-                    </div>
-                    <div class="hamburgerIcon">
-                        <img src="assets/hamburger-dark-mode-icon.png" width="24px" height="24px" alt="">
-                    </div>
-                </div>
-
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <svg
+              version="1.1"
+              viewBox="0 0 557 540"
+              xmlns="http://www.w3.org/2000/svg"
+              style="height: 5rem"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <g transform="translate(-1)" fill-rule="nonzero">
+                  <path
+                    d="m181.91 539.68h-0.7c-0.76 0-1.44-0.11-2-0.17h-0.14l-1.62-0.2c-15.204-1.867-29.364-8.7129-40.27-19.47l-1.07-1.06-49.46-61.26-73.34-90.59-0.5-0.72c-2.8927-4.0899-5.2989-8.503-7.17-13.15-1.0257-2.532-1.8875-5.1274-2.58-7.77v-0.11c-0.22-0.85-0.43-1.69-0.62-2.56v-0.14c-0.8042-3.5966-1.2861-7.2578-1.44-10.94v-0.47-0.48c-0.067687-4.136 0.26722-8.2688 1-12.34l0.11-0.61 14.51-63.64 28.72-126c4.0017-17.442 15.802-32.074 32-39.68l178.2-85.93 3.34-0.67c5.6926-1.1418 11.484-1.7201 17.29-1.7201h2.83 0.57c8.4518-0.016309 16.808 1.7879 24.5 5.2901l0.47 0.22 175.82 84.2 0.48 0.25c7.1101 3.7526 13.491 8.7481 18.84 14.75 2.7886 3.1018 5.2639 6.4715 7.39 10.06l0.17 0.29c2.1776 3.7964 3.9314 7.8205 5.23 12l0.3 1 44.23 190.25 0.17 1.42c2.0399 16.443-2.1677 33.052-11.79 46.54l-0.48 0.68-121.46 150.24c-7.2792 9.604-17.475 16.59-29.06 19.91-0.93 0.27-1.87 0.52-2.81 0.75l-0.3 0.07c-5.0328 1.1701-10.183 1.76-15.35 1.76h-194.01z"
+                    fill="#fff"
+                  ></path>
+                  <path
+                    d="m492 131.65c-0.75221-2.3458-1.7582-4.6025-3-6.73-1.2507-2.1148-2.7114-4.0982-4.36-5.92-3.3032-3.7145-7.2456-6.8067-11.64-9.13l-179.82-86c-4.3569-1.9816-9.0938-2.9883-13.88-2.95h-0.77c-4.9428-0.19294-9.8909 0.20318-14.74 1.18l-179.72 86.6c-8.9642 4.1124-15.498 12.17-17.67 21.79l-3.69 16.16 216.29 117.67 0.34-0.18 217.22-112.72-4.56-19.77z"
+                    fill="#D9C88D"
+                  ></path>
+                  <path
+                    d="m279 264.32l-216.29-117.67-25.77 113.1-14.73 64.63c-0.44744 2.4671-0.64178 4.9734-0.58 7.48v0.29c0.072639 2.1493 0.33702 4.2878 0.79 6.39 0.12 0.56 0.26 1.1 0.4 1.65 0.41228 1.5719 0.92671 3.1151 1.54 4.62 1.1152 2.7748 2.5517 5.4095 4.28 7.85l23.69 29.27 51 63 49.67 61.55c6.7982 6.7311 15.643 11.009 25.14 12.16 0.67 0 1.31 0.18 2 0.21h99.17v-254.34l-0.31-0.19z"
+                    fill="#D9C88D"
+                  ></path>
+                  <path
+                    d="m536.75 324.38l-40.19-173-217.23 112.76v254.71h98.82c3.2616 0.017 6.5139-0.34884 9.69-1.0906 0.62-0.15 1.23-0.31 1.84-0.49 6.2438-1.7629 11.72-5.5604 15.56-10.79l66.09-81.75 31.31-38.73 26.94-33.33c5.8432-8.2018 8.4013-18.295 7.17-28.29z"
+                    fill="#D9C88D"
+                  ></path>
+                  <path
+                    d="m120.94 369l137 75.89c1.3702 0.76284 3.0421 0.74251 4.3933-0.05344s2.1796-2.2483 2.1767-3.8166v-161.02c0-5.718-3.1489-10.971-8.19-13.67l-1.64-0.87-134.68-71.99c-0.8041-0.43178-1.7757-0.41032-2.56 0.056543-0.78426 0.46687-1.2663 1.3108-1.27 2.2235l-0.94 163.17c0.02 3.63 2.77 8.44 5.71 10.08z"
+                    fill="#fff"
+                  ></path>
+                  <path
+                    d="m282.61 103.85c-4.0372-0.033083-8.0333 0.81323-11.71 2.481l-134.2 60.47c-0.91184 0.40637-1.512 1.2973-1.5476 2.295-0.032512 0.99771 0.50554 1.9274 1.3876 2.395l135.72 72.51c0.15 0.09 0.31 0.16 0.47 0.24l0.59 0.29 0.26 0.11 0.8 0.34h0.09c4.9879 1.8704 10.539 1.5061 15.24-1l139.14-73.94c1.1079-0.5822 1.7814-1.7504 1.7328-3.0009-0.054039-1.2505-0.82096-2.3596-1.9728-2.8491l-135.06-58.05c-3.4545-1.4945-7.1761-2.2735-10.94-2.291z"
+                    fill="#fff"
+                  ></path>
+                  <path
+                    d="m442.82 192.61c-1.08-0.49333-2.4133-0.29667-4 0.59l-24.52 13.54c-3.6117 1.9922-6.3845 5.2194-7.81 9.09l-37.49 87.55-37.31-46.2c-1.59-2.29-4.2-2.45-7.81-0.45l-24.51 13.54c-1.6358 0.9266-3.0116 2.2508-4 3.85-1.0039 1.4454-1.5667 3.151-1.62 4.91v166.83c0 1.59 0.55 2.59 1.63 3s2.42 0.19 4-0.69l27.34-15.1c1.6143-0.90735 2.9864-2.1902 4-3.74 1.0178-1.3976 1.5863-3.0717 1.63-4.8v-105l23.21 30.12c2.1667 2.1267 4.6967 2.3933 7.59 0.8l11.67-6.45c3.18-1.7467 5.71-4.8067 7.59-9.18l23.43-55.9 0.25 97.1 0.17 8.31c-0.10795 1.217 0.57186 2.3675 1.69 2.86 1.2747 0.44018 2.6836 0.23517 3.78-0.55l27.27-15.83c1.5869-0.9387 2.9245-2.2455 3.9-3.81 0.9881-1.4207 1.5184-3.1095 1.5212-4.84v-166.43c0.028815-1.6-0.51118-2.64-1.6012-3.12z"
+                    fill="#fff"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="menuList">
+            <ul>
+              <li>
+                <a target="_blank" href="https://metal3.io/blog/index.html">
+                  Blog</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://metal3.io/blog/index.html">
+                  Community Resource</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://metal3.io/documentation.html">
+                  Documentation</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://metal3.io/blog/index.html">
+                  Try it</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="searchMode">
+            <div class="modeIcon">
+              <img
+                src="assets/dark-mode-icon.png"
+                width="24px"
+                height="24px"
+                alt=""
+              />
             </div>
-        </nav>
-        <nav class="mobileNav hide">
-            <div class="container">
-                <div class="mobileMenuList">
-                    <ul>
-                        <li>Blog</li>
-                        <li>Community Resource</li>
-                        <li>Documentation</li>
-                        <li>Try it</li>
-                    </ul>
-                </div>
-
+            <div class="searchIcon">
+              <img
+                src="assets/dark-mode-search-icon.png"
+                width="24px"
+                height="24px"
+                alt=""
+              />
             </div>
-
-
-        </nav>
+            <div class="hamburgerIcon">
+              <img
+                src="assets/hamburger-dark-mode-icon.png"
+                width="24px"
+                height="24px"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="mobileNav hide">
+        <div class="container">
+          <div class="mobileMenuList">
+            <ul>
+              <li>Blog</li>
+              <li>Community Resource</li>
+              <li>Documentation</li>
+              <li>Try it</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <section class="heroSection">
-        <div class="container">
-            <div class="heroWriting">
-                <h1>Metal-<span style="color: #D9C88D;">Kubed</span></h1>
-                <h2 style="padding: 2rem 0rem;">Unlock the Full Potential of Kubernetes with Metal3</h2>
-                <p>We provide a standardized, non-vendor-specific solution that enables the deployment, management, and expansion of bare-metal infrastructure with the same level of flexibility and automation found in a public cloud.</p>
-                <div class="heroBtns">
-                    <div class="heroBtn contained">
-                        <a href="">Get Started</a>
-                    </div>
-                    <div class="heroBtn outlined">
-                        <a href="">User Guide</a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="heroWriting">
+          <h1>Metal-<span style="color: #d9c88d">Kubed</span></h1>
+          <h2 style="padding: 2rem 0rem">
+            Unlock the Full Potential of Kubernetes with Metal <sup>3</sup>
+          </h2>
+          <p>
+            We provide a standardized, non-vendor-specific solution that enables
+            the deployment, management, and expansion of bare-metal
+            infrastructure with the same level of flexibility and automation
+            found in a public cloud.
+          </p>
+          <div class="heroBtns">
+            <div class="heroBtn contained">
+              <a href="https://metal3.io/try-it.html" target="_blank"
+                >Get Started</a
+              >
             </div>
-            
+            <div class="heroBtn outlined">
+              <a href="https://book.metal3.io/introduction.html" target="_blank"
+                >User Guide</a
+              >
+            </div>
+          </div>
         </div>
+        <div class="heroImage"></div>
+      </div>
     </section>
     <div class="whyMetal">
-        <div class="container">
-            <!-- <div class="containerWriting">
+      <div class="container">
+        <!-- <div class="containerWriting">
                 <h1>Why Metal3</h1>
                 <p>Donec consequat est diam. Mauris cursus commodo bibendum. Aliquam nisl nisl, ultrices at iaculis ut, rhoncus et turpis. Phasellus nulla mi, venenatis ac egestas a, sagittis ut nisl.</p>
             </div> -->
-            <div class="cards">
-                <div class="card" style="background-color: transparent; display: flex; justify-content: center;flex-direction: column;">
-                    <h1>Why Metal<span style = 'color:#D9C88D'><sup>3</sup></span></h1>
-                    <p>is the right choice for your bare metal infrastructure needs.</p>
-    
+        <div class="cards">
+          <div
+            class="card"
+            style="
+              background-color: transparent;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+            "
+          >
+            <h1>
+              Why Metal<span style="color: #d9c88d"><sup>3</sup></span>
+            </h1>
+            <p>is the right choice for your bare metal infrastructure needs.</p>
+          </div>
+          <div class="card">
+            <img src="assets/servers.png" alt="" width="500px" height="500px" />
+            <h2>
+              Metal<sup>3</sup> provides a unified interface for managing your
+              bare metal hosts, allowing you to easily provision, update, and
+              monitor them from a single location.
+            </h2>
+          </div>
+          <div class="card">
+            <img src="assets/kubernetes.png" alt="" />
 
-                </div>
-                <div class="card">
-                    <img src="assets/servers.png" alt="" width="500px" height="500px">
-                    <h2>Metal<sup>3</sup> provides a unified interface for managing your bare metal hosts, allowing you to easily provision, update, and monitor them from a single location.</h2>
-
-                </div>
-                <div class="card">
-                    <img src="assets/kubernetes.png" alt="">
-
-                    <h2>Metal<sup>3</sup> integrates seamlessly with Kubernetes, allowing you to manage your bare metal hosts using Kubernetes APIs and tools.</h2>
-
-                </div>
-                <div class="card">
-
-                    <img src="assets/computer.png" alt="">
-                    <h2>With Metal<sup>3</sup> you can quickly and easily provision new bare metal hosts, either manually or through automated processes. This allows you to quickly scale your infrastructure as needed.</h2>
-
-                </div>
-                <div class="card">
-                    <img src="assets/cpu.png" alt="">
-                    <h2>Metal<sup>3</sup> is designed to work with a wide range of hardware platforms, including x86 servers, Arm servers, and more.</h2>
-    
-                </div>
-                <div class="card">
-                    <img src="assets/public-service.png" alt="">
-                    <h2>Metal<sup>3</sup> is an open-source project that is developed and maintained by a community of contributors from around the world. This means that the project is constantly evolving and improving, and that you can benefit from the collective knowledge and expertise of the community.</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section class="blog">
-        
-     
-        <div class="container">
-            <!-- <h3 style="width:100%">Blog</h3> -->
-            <div class="blogWriting">
-                <h1>What's New?</h1>
-                <p>A hub for news, updates, and insights on Metal<sup>3</sup> and its applications, as well as tips and best practices for using the platform.</p>
-                
-                <div class="blogBtn contained">
-                    <a href="">Read More</a>
-                </div>
-            </div>
-            <div class="blogCards">
-                <div class="blogCard">
-                    <div class="briefDetails">
-                        <div class="label">
-                            <h5>cluster</h5>
-                        </div>
-                        <div class="label">
-                            <h5>provider</h5>
-                        </div>
-                        <div class="topic">
-                           <h4>One cluster - multiple providers</h4> 
-                        </div>
-                        <div class="author-date">
-                            <h6>By Lennart Jern</h6>
-                            <h6>Friday, 10/02/2023</h6>
-                        </div>
-                        <div class="description">
-                            <p>Running on bare metal has both benefits and drawbacks. You can get the best performance possible out of the hardware, but it can also be quite expensive and maybe not necessary for all workloads. Perhaps a hybrid cluster could give you the best of both?</p>
-                        </div>
-                        <div class="blogBtn outlined" style="    width: 100%;text-align: center;display: flex;justify-content: center;">
-                            Read More
-                        </div>
-                    </div>
-                </div>
-                <div class="blogCard">
-                    <div class="briefDetails">
-                        <div class="label">
-                            <h5>pivoting</h5>
-                        </div>
-                        <div class="label">
-                            <h5>move</h5>
-                        </div>
-                        <div class="topic">
-                           <h4>Metal<sup>3</sup>Introduces Pivoting</h4> 
-                        </div>
-                        <div class="author-date">
-                            <h6>By Kashif Nizam Khan</h6>
-                            <h6>Wednesday, 5/05/2021</h6>
-                        </div>
-                        <div class="description">
-                            <p>Metal<sup>3</sup> project has introduced pivoting in its CI workflow. The motivation for pivoting is to move all the objects from the ephemeral/management cluster to a target cluster. This blog post will briefly introduce the concept of pivoting and the impact it has on the overall CI workflow. </p>
-                        </div>
-                        <div class="blogBtn outlined" style="    width: 100%;text-align: center;display: flex;justify-content: center;">
-                            Read More
-                        </div>
-                    </div>
-                </div>
-                <div class="blogCard">
-                    <div class="briefDetails">
-                        <div class="label">
-                            <h5>ipam</h5>
-                        </div>
-                        <div class="label">
-                            <h5>metal3</h5>
-                        </div>
-                        <div class="topic">
-                           <h4>Introducing the Metal<sup>3</sup> IP Address Manager</h4> 
-                        </div>
-                        <div class="author-date">
-                            <h6>By Maël Kimmerlin</h6>
-                            <h6>Friday, 05/07/2020</h6>
-                        </div>
-                        <div class="description">
-                            <p>As a part of developing the Cluster API Provider Metal3 (CAPM3) v1alpha4 release, the Metal<sup>3</sup>crew introduced a new project: its own IP Address Manager. This blog post will go through the motivations behind such a project, the features that it brings, its use in Metal3 and future work. </p>
-                        </div>
-                        <div class="blogBtn outlined" style="    width: 100%;text-align: center;display: flex;justify-content: center;">
-                            Read More
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="faqs">
-        <div class="container">
-            <h1 style="width:100%">FAQs</h1>
-            <div class="faqsWriting">
-                <p>Check out our answers to some of the most frequently asked questions and get up to speed on all things Metal<sup>3</sup>.</p>
-
-            </div>
-              <div class="accordion">
-              <div>
-              <input type="radio" name="accordion-section" id="accordion1" class="accordion_input">
-              <label for="accordion1" class="accordion_label">How does Metal<sup>3</sup> integrate with Kubernetes?</label>
-              <div class="accordion_content">
-                <p>
-                 Metal<sup>3</sup> integrates with Kubernetes through a number of tools, including the Kubernetes API server, the Metal<sup>3</sup> operator, and the Metal3 CLI.
-                </p>
-              </div>
-               </div>
-                
-                  <div>
-                  <input type="radio" name="accordion-section" id="accordion2" class="accordion_input">
-              <label for="accordion2" class="accordion_label">How does Metal<sup>3</sup> manage updates and patches for bare metal hosts?</label>
-              <div class="accordion_content">
-                    <p>
-                    Metal<sup>3</sup> provides tools for managing updates and patches on bare metal hosts, including integration with tools like Ansible and Foreman.
-                    </p>
-                    </div>
-                  </div>
-                  <div>
-                  <input type="radio" name="accordion-section" id="accordion3" class="accordion_input">
-                  <label for="accordion3" class="accordion_label">What is the baremetal operator?</label>
-                  <div class="accordion_content">
-                    <p>
-                        The bare metal operator is documented at <a href="https://github.com/metal3-io/baremetal-operator/blob/master/docs/api.md">https://github.com/metal3-io/baremetal-operator/blob/master/docs/api.md</a> and it’s the operator in charge of definitions of physical hosts, containing information about how to reach the Out of Band management controller, URL of image to provision, plus other properties related with hosts being used for provisioning instances.
-                    </p>
-                        </div>
-                      </div>
-                      <div>
-                        <input type="radio" name="accordion-section" id="accordion4" class="accordion_input">
-                    <label for="accordion4" class="accordion_label">Can Metal<sup>3</sup> be used in conjunction with other infrastructure management tools?</label>
-                    <div class="accordion_content">
-                        <p>
-                            Metal<sup>3</sup> can be used alongside other infrastructure management tools, but it is designed to work particularly well with Kubernetes.
-                        </p>
-                          </div>
-                        </div>
+            <h2>
+              Metal<sup>3</sup> integrates seamlessly with Kubernetes, allowing
+              you to manage your bare metal hosts using Kubernetes APIs and
+              tools.
+            </h2>
+          </div>
+          <div class="card">
+            <img src="assets/computer.png" alt="" />
+            <h2>
+              With Metal<sup>3</sup> you can quickly and easily provision new
+              bare metal hosts, either manually or through automated processes.
+              This allows you to quickly scale your infrastructure as needed.
+            </h2>
+          </div>
+          <div class="card">
+            <img src="assets/cpu.png" alt="" />
+            <h2>
+              Metal<sup>3</sup> is designed to work with a wide range of
+              hardware platforms, including x86 servers, Arm servers, and more.
+            </h2>
+          </div>
+          <div class="card">
+            <img src="assets/public-service.png" alt="" />
+            <h2>
+              Metal<sup>3</sup> is an open-source project that is developed and
+              maintained by a community of contributors from around the world.
+              This means that the project is constantly evolving and improving,
+              and that you can benefit from the collective knowledge and
+              expertise of the community.
+            </h2>
           </div>
         </div>
+      </div>
+    </div>
+    <section class="blog">
+      <div class="container">
+        <!-- <h3 style="width:100%">Blog</h3> -->
+        <div class="blogWriting">
+          <h1>What's New?</h1>
+          <p>
+            A hub for news, updates, and insights on Metal<sup>3</sup> and its
+            applications, as well as tips and best practices for using the
+            platform.
+          </p>
 
-        <div class="communityBtns">
-            <p>Still have more questions?</p>
-            <div class="communityBtn contained">
-                <a href="">Join our community</a>
-                <span><img src="/assets//dark-mode-arrow-right-icon.png" style="height: 1.8rem;" alt=""></span>
-            </div>
+          <div class="blogBtn contained">
+            <a href="https://metal3.io/blog/index.html" target="_blank"
+              >Read More</a
+            >
+          </div>
         </div>
-    </section>
-    <!-- <section class="community">
-        <div class="container">
-            <h1 style="width:100%; text-align: center; margin-bottom: 10rem;">Community</h1>
-            <div class="communityImage">
-
-            </div>
-            <div class="communityWriting">
-                <p>Connect with the Metal3.io community to learn more, contribute ideas, and help build the future of Metal3.io.
-                    Learn more about how to make the most of the Metal3io features in your work.
+        <div class="blogCards">
+          <div class="blogCard">
+            <div class="briefDetails">
+              <div class="label">
+                <h5>cluster</h5>
+                <h5>provider</h5>
+              </div>
+              <div class="topic">
+                <h4>One cluster - multiple providers</h4>
+              </div>
+              <div class="author-date">
+                <h6>By Lennart Jern</h6>
+                <h6>Friday, 10/02/2023</h6>
+              </div>
+              <div class="description">
+                <p>
+                  Running on bare metal has both benefits and drawbacks. You can
+                  get the best performance possible out of the hardware, but it
+                  can also be quite expensive and maybe not necessary for all
+                  workloads. Perhaps a hybrid cluster could give you the best of
+                  both?
                 </p>
-                <div class="communityBtns">
-                    <div class="communityBtn contained">
-                        <a href="">Join the conversation </a>
-                        <span><img src="/assets//dark-mode-arrow-right-icon.png" style="height: 1.8rem;" alt=""></span>
-                    </div>
-                </div>
+              </div>
+              <a
+                href="https://metal3.io/blog/index.html"
+                style="width: 100%; display: flex; justify-content: flex-end"
+                ><img
+                  src="assets/right-arrow.png"
+                  style="height: 3rem; width: 3rem; background: none"
+                  alt=""
+                />
+              </a>
             </div>
-
+          </div>
+          <div class="blogCard">
+            <div class="briefDetails">
+              <div class="label">
+                <h5>pivoting</h5>
+                <h5>move</h5>
+              </div>
+              <div class="topic">
+                <h4>Metal<sup>3</sup> Introduces Pivoting</h4>
+              </div>
+              <div class="author-date">
+                <h6>By Kashif Nizam Khan</h6>
+                <h6>Wednesday, 5/05/2021</h6>
+              </div>
+              <div class="description">
+                <p>
+                  Metal<sup>3</sup> project has introduced pivoting in its CI
+                  workflow. The motivation for pivoting is to move all the
+                  objects from the ephemeral/management cluster to a target
+                  cluster. This blog post will briefly introduce the concept of
+                  pivoting and the impact it has on the overall CI workflow.
+                </p>
+              </div>
+              <a
+                href="https://metal3.io/blog/2021/05/05/Pivoting.html"
+                style="width: 100%; display: flex; justify-content: flex-end"
+                ><img
+                  src="assets/right-arrow.png"
+                  style="height: 3rem; width: 3rem; background: none"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="blogCard">
+            <div class="briefDetails">
+              <div class="label">
+                <h5>ipam</h5>
+                <h5>metal3</h5>
+              </div>
+              <div class="topic">
+                <h4>Introducing the Metal<sup>3 </sup> IP Address Manager</h4>
+              </div>
+              <div class="author-date">
+                <h6>By Maël Kimmerlin</h6>
+                <h6>Friday, 05/07/2020</h6>
+              </div>
+              <div class="description">
+                <p>
+                  As a part of developing the Cluster API Provider Metal3
+                  (CAPM3) v1alpha4 release, the Metal<sup>3</sup>crew introduced
+                  a new project: its own IP Address Manager. This blog post will
+                  go through the motivations behind such a project, the features
+                  that it brings, its use in Metal3 and future work.
+                </p>
+              </div>
+              <a
+                href="https://metal3.io/blog/2021/05/05/Pivoting.html"
+                style="width: 100%; display: flex; justify-content: flex-end"
+                ><img
+                  src="assets/right-arrow.png"
+                  style="height: 3rem; width: 3rem; background: none"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
         </div>
-    </section> -->
-    <footer>
+      </div>
+    </section>
+    <section class="faqs">
+      <div class="container">
+        <h1 style="width: 100%">FAQs</h1>
+        <div class="faqsWriting">
+          <p>
+            Check out our answers to some of the most frequently asked questions
+            and get up to speed on all things Metal<sup>3</sup>.
+          </p>
+        </div>
+        <div class="accordion">
+          <div>
+            <input
+              type="radio"
+              name="accordion-section"
+              id="accordion1"
+              class="accordion_input"
+            />
+            <label for="accordion1" class="accordion_label"
+              >How does Metal<sup>3</sup> integrate with Kubernetes?</label
+            >
+            <div class="accordion_content">
+              <p>
+                Metal<sup>3</sup> integrates with Kubernetes through a number of
+                tools, including the Kubernetes API server, the Metal<sup
+                  >3</sup
+                >
+                operator, and the Metal3 CLI.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              name="accordion-section"
+              id="accordion2"
+              class="accordion_input"
+            />
+            <label for="accordion2" class="accordion_label"
+              >How does Metal<sup>3</sup> manage updates and patches for bare
+              metal hosts?</label
+            >
+            <div class="accordion_content">
+              <p>
+                Metal<sup>3</sup> provides tools for managing updates and
+                patches on bare metal hosts, including integration with tools
+                like Ansible and Foreman.
+              </p>
+            </div>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="accordion-section"
+              id="accordion3"
+              class="accordion_input"
+            />
+            <label for="accordion3" class="accordion_label"
+              >What is the baremetal operator?</label
+            >
+            <div class="accordion_content">
+              <p>
+                The bare metal operator is documented at
+                <a
+                  href="https://github.com/metal3-io/baremetal-operator/blob/master/docs/api.md"
+                  >https://github.com/metal3-io/baremetal-operator/blob/master/docs/api.md</a
+                >
+                and it’s the operator in charge of definitions of physical
+                hosts, containing information about how to reach the Out of Band
+                management controller, URL of image to provision, plus other
+                properties related with hosts being used for provisioning
+                instances.
+              </p>
+            </div>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="accordion-section"
+              id="accordion4"
+              class="accordion_input"
+            />
+            <label for="accordion4" class="accordion_label"
+              >Can Metal<sup>3</sup> be used in conjunction with other
+              infrastructure management tools?</label
+            >
+            <div class="accordion_content">
+              <p>
+                Metal<sup>3</sup> can be used alongside other infrastructure
+                management tools, but it is designed to work particularly well
+                with Kubernetes.
+              </p>
+            </div>
+            <div class="accordion_content">
+              <p>
+                Metal<sup>3</sup> can be used alongside other infrastructure
+                management tools, but it is designed to work particularly well
+                with Kubernetes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="communityBtns">
         <div class="container">
-            <div class="footerMain">
-                <img src="assets/cncf.png" alt="">
-                <ul>
-                    <li><a href="https://metal3.io/privacy-statement.html">Privacy Statement</a></li>
-                    <li><a href="https://www.cncf.io/">Cloud Native Computing  Foundation</a></li>
-                    <li><a href="https://www.linuxfoundation.org/legal/trademark-usage">Trademark Usage</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <p>&copy;The Metal³ Contributors</p> 
-                <div class="social-icons">
-                    <ul>
-                        <li><a href="https://app.slack.com/client/T09NY5SBT/CHD49TLE7"><img src="assets/slack.png" alt=""></a></li>
-                            <li><a href="https://github.com/metal3-io"><img src="assets/github.png" alt=""></a></li>
-                        <li><a href="https://twitter.com/metal3_io"><img src="assets/Twitter.png" alt=""></a></li>
-                        <li><a href="https://groups.google.com/g/metal3-dev?pli=1"><img src="assets/mail.png" alt=""></a></li>
-                        <li><a href="https://www.youtube.com/channel/UC_xneeYbo-Dl4g-U78xW15g/videos"><img src="assets/youtube.png" alt=""></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>    
+          <h1 style="width: 100%; font-size: 3rem">
+            Still have more questions?
+          </h1>
+          <div class="communityBtn contained">
+            <a href="https://metal3.io/community-resources.html"
+              >Join our community</a
+            >
+            <span
+              ><img
+                src="/assets//dark-mode-arrow-right-icon.png"
+                style="height: 1.8rem"
+                alt=""
+            /></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footerMain">
+          <img src="assets/cncf.png" alt="" />
+          <ul>
+            <li>
+              <a href="https://metal3.io/privacy-statement.html"
+                >Privacy Statement</a
+              >
+            </li>
+            <li>
+              <a href="https://www.cncf.io/"
+                >Cloud Native Computing Foundation</a
+              >
+            </li>
+            <li>
+              <a href="https://www.linuxfoundation.org/legal/trademark-usage"
+                >Trademark Usage</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>&copy;The Metal³ Contributors</p>
+          <div class="social-icons">
+            <ul>
+              <li>
+                <a href="https://app.slack.com/client/T09NY5SBT/CHD49TLE7"
+                  ><img src="assets/slack.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/metal3-io"
+                  ><img src="assets/github.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/metal3_io"
+                  ><img src="assets/Twitter.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://groups.google.com/g/metal3-dev?pli=1"
+                  ><img src="assets/mail.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UC_xneeYbo-Dl4g-U78xW15g/videos"
+                  ><img src="assets/youtube.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="script.js"></script>
-    
-</body>
+  </body>
 </html>
